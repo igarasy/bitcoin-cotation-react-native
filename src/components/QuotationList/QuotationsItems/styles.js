@@ -1,45 +1,44 @@
-import { StyleSheet } from "react-native"
+import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
-  mainContent:{
-    width: "95%",
-    height: "auto",
-    backgroundColor: "grey",
-    marginLeft: "3%",
+  mainContent: {
+    width: '95%',
+    height: 'auto',
+    backgroundColor: '#A0E7E5',
+    marginLeft: '3%',
     marginBottom: 15,
     borderRadius: 10,
-    flexDirection:"row",
-    alignItems: "center",
+    flexDirection: 'row',
+    alignItems: 'center',
     padding: 10,
   },
-  contextLeft:{
-    width: "36%",
-    alignItems: "flex-start",
+  contextLeft: {
+    width: '36%',
+    alignItems: 'flex-start',
   },
-  boxLogo:{
-    flexDirection:"row",
-    alignItems: "center",
+  boxLogo: {
+    flexDirection: 'row',
+    alignItems: 'center',
   },
-  logoBitcoin:{
+  logoBitcoin: {
     width: 40,
     height: 40,
     marginLeft: 2,
   },
-  dayQuotation:{
+  dayQuotation: {
     fontSize: 16,
     paddingLeft: 2,
-    fontWeight: "bold",
+    fontWeight: 'bold',
   },
-  price:{
-    color: "black",
+  price: {
+    color: 'black',
     fontSize: 18,
-    fontWeight: "bold",
+    fontWeight: 'bold',
   },
-  contextRigth:{
-    width: "60%",
-    alignItems: "flex-end",
+  contextRigth: {
+    width: '60%',
+    alignItems: 'flex-end',
   },
- 
 })
 
 export default styles

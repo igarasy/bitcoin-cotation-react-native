@@ -5,6 +5,7 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "auto",
     alignItems:"center",
+    marginTop: 10,
     marginBottom: 15,
   },
   currentPrice:{
