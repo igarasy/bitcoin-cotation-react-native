@@ -81,7 +81,7 @@ export default function App() {
     <SafeAreaView style={styles.container}>
       <StatusBar backgroundColor="#A0E7E5" barStyle="light-content" />
       <CurrentPrice />
-      <HistoryGraphic />
+      <HistoryGraphic infoDataGraphic={coinsGraphicList}/>
       <QuotationsList  filterDay={updateDay} listTransactions={coinList}/>
     </SafeAreaView>
   )

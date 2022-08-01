@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     paddingLeft: 2,
     fontWeight: 'bold',
+    marginLeft: 10,
   },
   price: {
     color: 'black',
