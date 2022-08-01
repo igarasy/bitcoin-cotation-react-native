@@ -58,11 +58,18 @@ export default function App() {
   const [coinsGraphicList, setCoinsGraphicList] = React.useState([0])
   const [days, setDays] = React.useState(30)
   const [updateData, setUpdateData] = React.useState(true)
+  const [price, setPrice] = React.useState<number>()
 
   function updateDay(n: number) {
     setDays(n)
     setUpdateData(true)
   }
+
+  function priceCotation() {
+      return setPrice(coinsGraphicList.pop())
+  }
+   
+  
 
   React.useEffect(() => {
     getListCoins(url(days)).then((data) => {
@@ -72,6 +79,7 @@ export default function App() {
     getPriceCoinsGraphic(url(days)).then((dataGraphic) => {
       setCoinsGraphicList(dataGraphic)
     })
+    priceCotation()
     if(updateData){
       setUpdateData(false)
     }
@@ -80,7 +88,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar backgroundColor="#A0E7E5" barStyle="light-content" />
-      <CurrentPrice />
+      <CurrentPrice lastQuotation={price} />
       <HistoryGraphic infoDataGraphic={coinsGraphicList}/>
       <QuotationsList  filterDay={updateDay} listTransactions={coinList}/>
     </SafeAreaView>
